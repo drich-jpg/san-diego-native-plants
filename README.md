@@ -1,4 +1,4 @@
-# san-diego-native-plants
+# San Diego Native Plants
 For a website showcasing some native plants found around San Diego county. I made this to help myself keep track of some of the different common species one might find. 
 
 <br>Includes...
