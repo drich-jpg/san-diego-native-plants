@@ -6,144 +6,16 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>San Diego Native Plants</title>
       <link rel="icon" type="image/x-icon" href="favicon.jpg" />
-
-      <!-- Styles-->
-      <style>
-         body {
-            background: radial-gradient(wheat, white);
-            margin: 0;
-            font-family: "Trebuchet MS", sans-serif;
-         }
-
-         body > p {
-            margin: 2% 2%;
-         }
-
-         a:hover {
-            font-weight: bold;
-         }
-
-         div.plantCard ul {
-            list-style: disc;
-            width: 90%;
-            margin-left: 5px;
-            text-align: center;
-         }
-
-         .plantCategory {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-between;
-         }
-
-         .plantCard {
-            display: block;
-            width: 400px;
-            flex: 2 2 300px;
-            border-radius: 15px;
-            border: 1px black solid;
-            padding: 2px 10px;
-            margin: 5px;
-            text-align: center;
-            background-color: #7ebec5;
-            box-shadow: 3px 3px darkslateblue;
-         }
-
-         .plantCard > * {
-            display: inline-block;
-            width: 100%;
-            padding: 0;
-         }
-
-         /* div.chaparral #plantCard {
-            background-color: #809961;
-            }
-         div.desert {
-             background-color: #7EBEC5;
-            }
-         } */
-
-         .plantCard img {
-            max-height: 400px;
-            max-width: 400px;
-         }
-
-         .categoryHeader {
-            background-size: cover;
-            height: 200px;
-            display: flex;
-            align-items: center;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin: 5px 0;
-         }
-
-         .categoryHeader * {
-            width: 100%;
-            text-shadow: 1px 1px 5px black;
-         }
-
-         #coastalSageScrub {
-            background: linear-gradient(#7ebec5, #16841f);
-            background: url(img/coastalsagescrub/css_background.jpg);
-            background-position: center;
-         }
-
-         #chaparral {
-            background: linear-gradient(#29c4a9, #2b87da);
-            background: url(img/chaparral/chaparral_background2.jpg);
-            background-position: bottom;
-         }
-
-         #desert {
-            background-color: #809961;
-            background: linear-gradient(#85db8f, #16841f);
-            background: url(img/drylake/desertdrylake_background2.jpg);
-            background-position: center;
-         }
-
-         .resources {
-            display: flex;
-            flex-flow: wrap row;
-            justify-content: center;
-            height: 100%;
-            margin: 10px;
-         }
-
-         .resources p,
-         .resources span,
-         .resources img,
-         nav {
-            text-align: center;
-            width: 100%;
-         }
-
-         .resources > div {
-            margin: 10px;
-            display: inline-block;
-            flex: 0 0 500px;
-         }
-
-         footer {
-            background-color: black;
-            color: white;
-            text-align: center;
-         }
-
-         footer a {
-            color: white;
-         }
-      </style>
+      <link rel="stylesheet" href="style.css" />
    </head>
    <body>
       <h1 style="text-align: center"><strong>San Diego Native Plants</strong></h1>
       <p style="text-align: center">site and photos by David Richards</p>
       <p>
          San Diego is a very diverse county and there are several diverse communities of plants that can be found across the county. Three of these plant communities are Coastal Sage Scrub (CSS), Chaparral, and Desert Scrub. Click on the menu items below
-         or scroll to the relevant sections to see photos (as well as some fun facts) of plants in these communities!
+         or scroll to the relevant sections to see photos (as well as some fun facts) of plants in these communities! <i>Want to flip through some plant flash cards to test your knowledge? <a href="flashcards.html">Click here</a>.</i>
       </p>
-      <nav><a href="#coastalSageScrub">Coastal Sage Scrub</a> • <a href="#chaparral">Chaparral</a> • <a href="desert">Desert Scrub</a></nav>
+      <nav><a href="#coastalSageScrub">Coastal Sage Scrub</a> • <a href="#chaparral">Chaparral</a> • <a href="#desert">Desert Scrub</a></nav>
 
       <div class="categoryHeader" id="coastalSageScrub">
          <h2>Coastal Sage Scrub</h2>
@@ -358,6 +230,6 @@
             </ul>
          </div>
       </div>
-      <footer>David Richards • <a href="http://davidrichards.me">davidrichards.me</a></footer>
+      <footer>Site by David Richards • <a href="http://davidrichards.me">davidrichards.me</a></footer>
    </body>
 </html>

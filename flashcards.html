@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>San Diego Native Plants :: Flashcards</title>
+      <link rel="icon" type="image/x-icon" href="favicon.jpg" />
+      <link rel="stylesheet" href="style.css" />
+      <script src="js/slideshow.js" defer></script>
+      <style></style>
+   </head>
+   <body>
+      <h1 style="text-align: center"><strong>San Diego Native Plants</strong></h1>
+      <p style="text-align: center">site and photos by David Richards</p>
+      <p>
+         San Diego is a very diverse county and there are several diverse communities of plants that can be found across the county. Three of these plant communities are Coastal Sage Scrub (CSS), Chaparral, and Desert Scrub. How well do you know our
+         native flora? Flip through these flashcards to test your knowledge. <i>Want to see a list of plants sorted by ecosystem plus some cool plant facts? <a href="static-site.html">Click here</a>.</i>
+      </p>
+      <div class="plantFlashcard">
+         <div class="controls">
+            <div><input type="button" value="-" onclick="carousel('down')" /> <input type="button" value="+" onclick="carousel('up')" /></div>
+         </div>
+         <div id="slideshow"></div>
+      </div>
+      <div class="controls">
+         Scroll automatically:
+         <input type="checkbox" name="autoCarousel" id="autoCarousel" onclick="autoCarousel()" />
+         <br />
+         Hide plant names
+         <input type="checkbox" name="hideName" id="hideName" onclick="hideName()" />
+      </div>
+      <!-- 
+      Coastal Sage Scrub | <label>Display:</label><input name="displaycss" type="radio" value="displayCSS" onclick="displayCards('css')" /> <label>Hide:</label><input name="displaycss" type="radio" value="hideCSS" onclick="hideCards('css')" />
+      <div id="displaycss" class="plantCategory"></div>
+      Chaparral | <label>Display:</label><input name="displaychaparral" type="radio" value="displayChaparral" onclick="displayCards('chaparral')" /> <label>Hide:</label
+      ><input name="displaychaparral" type="radio" value="hideChaparral" onclick="hideCards('chaparral')" />
+
+      <div id="displaycss" class="plantCategory"></div>
+      <div id="displaychaparral" class="plantCategory"></div>
+
+      -->
+
+      <footer>Site by David Richards • <a href="http://davidrichards.me">davidrichards.me</a></footer>
+   </body>
+</html>
