@@ -137,6 +137,8 @@ nav {
 }
 
 footer {
+   position: fixed;
+   bottom: 0;
    background-color: black;
    color: white;
    text-align: center;
