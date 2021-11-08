@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>San Diego Native Plants</title>
+      <link rel="icon" type="image/x-icon" href="favicon.jpg" />
+
+      <!-- Styles-->
+      <style>
+         body {
+            background: radial-gradient(wheat, white);
+            margin: 0;
+            font-family: "Trebuchet MS", sans-serif;
+         }
+
+         body > p {
+            margin: 2% 2%;
+         }
+
+         a:hover {
+            font-weight: bold;
+         }
+
+         div.plantCard ul {
+            list-style: disc;
+            width: 90%;
+            margin-left: 5px;
+            text-align: center;
+         }
+
+         .plantCategory {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+         }
+
+         .plantCard {
+            display: block;
+            width: 400px;
+            flex: 2 2 300px;
+            border-radius: 15px;
+            border: 1px black solid;
+            padding: 2px 10px;
+            margin: 5px;
+            text-align: center;
+            background-color: #7ebec5;
+            box-shadow: 3px 3px darkslateblue;
+         }
+
+         .plantCard > * {
+            display: inline-block;
+            width: 100%;
+            padding: 0;
+         }
+
+         /* div.chaparral #plantCard {
+            background-color: #809961;
+            }
+         div.desert {
+             background-color: #7EBEC5;
+            }
+         } */
+
+         .plantCard img {
+            max-height: 400px;
+            max-width: 400px;
+         }
+
+         .categoryHeader {
+            background-size: cover;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin: 5px 0;
+         }
+
+         .categoryHeader * {
+            width: 100%;
+            text-shadow: 1px 1px 5px black;
+         }
+
+         #coastalSageScrub {
+            background: linear-gradient(#7ebec5, #16841f);
+            background: url(img/coastalsagescrub/css_background.jpg);
+            background-position: center;
+         }
+
+         #chaparral {
+            background: linear-gradient(#29c4a9, #2b87da);
+            background: url(img/chaparral/chaparral_background2.jpg);
+            background-position: bottom;
+         }
+
+         #desert {
+            background-color: #809961;
+            background: linear-gradient(#85db8f, #16841f);
+            background: url(img/drylake/desertdrylake_background2.jpg);
+            background-position: center;
+         }
+
+         .resources {
+            display: flex;
+            flex-flow: wrap row;
+            justify-content: center;
+            height: 100%;
+            margin: 10px;
+         }
+
+         .resources p,
+         .resources span,
+         .resources img,
+         nav {
+            text-align: center;
+            width: 100%;
+         }
+
+         .resources > div {
+            margin: 10px;
+            display: inline-block;
+            flex: 0 0 500px;
+         }
+
+         footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+         }
+
+         footer a {
+            color: white;
+         }
+      </style>
+   </head>
+   <body>
+      <h1 style="text-align: center"><strong>San Diego Native Plants</strong></h1>
+      <p style="text-align: center">site and photos by David Richards</p>
+      <p>
+         San Diego is a very diverse county and there are several diverse communities of plants that can be found across the county. Three of these plant communities are Coastal Sage Scrub (CSS), Chaparral, and Desert Scrub. Click on the menu items below
+         or scroll to the relevant sections to see photos (as well as some fun facts) of plants in these communities!
+      </p>
+      <nav><a href="#coastalSageScrub">Coastal Sage Scrub</a> • <a href="#chaparral">Chaparral</a> • <a href="desert">Desert Scrub</a></nav>
+
+      <div class="categoryHeader" id="coastalSageScrub">
+         <h2>Coastal Sage Scrub</h2>
+         <p>
+            The Coastal Sage Scrub (CSS) plant community is found along coastal regions of Southern California and northern Baja California. It is better adapted for handling less water than chaparral plants and can often be found on xeric (south-facing)
+            slopes. Examples of plants in this community include...
+         </p>
+      </div>
+      <div class="plantCategory">
+         <div class="plantCard">
+            <h3>Chamise</h3>
+            <img src="img/coastalsagescrub/chamise3.jpg" alt="" />
+            <i>Adenostoma fasciculatum</i>
+            <ul>
+               <li>Most common plant in the CSS plant community</li>
+               <li>"Fasciculatum" refers to how the leaves are in fascicled bundles</li>
+            </ul>
+         </div>
+
+         <div class="plantCard">
+            <h3>California Sagebrush</h3>
+            <img src="img/coastalsagescrub/chamise1.jpg" alt="" />
+            <i>Artemisia californica</i>
+            <ul>
+               <li>Despite its name, it is not a member of the sage family</li>
+            </ul>
+         </div>
+
+         <div class="plantCard">
+            <h3>Mission Manzanita</h3>
+            <img src="img/coastalsagescrub/missionmanzanita1.jpg" alt="" />
+            <i>Xylococcus bicolor</i>
+            <ul>
+               <li>Despite its name, it is not a true manzanita</li>
+            </ul>
+         </div>
+
+         <div class="plantCard">
+            <h3>Lemonade Berry</h3>
+            <img src="img/coastalsagescrub/lemonadeberry1.jpg" alt="" />
+            <i>Rhus integrifolia</i>
+         </div>
+
+         <div class="plantCard">
+            <h3>White Sage</h3>
+            <img src="img/coastalsagescrub/whitesage1.jpg" alt="" />
+            <i>Salvia apiana</i>
+            <ul>
+               <li>Member of the Mint family</li>
+               <li>Is often sold for its distictive aroma</li>
+            </ul>
+         </div>
+
+         <div class="plantCard">
+            <h3>Black Sage</h3>
+            <img src="img/coastalsagescrub/blacksage1.jpg" alt="" />
+            <i>Salvia mellifera</i>
+            <ul>
+               <li>Has a distinctive sage-like aroma</li>
+            </ul>
+         </div>
+
+         <div class="plantCard">
+            <h3>Coastal Live Oak</h3>
+            <img src="img/coastalsagescrub/coastalliveoak1.jpg" alt="" />
+            <i>Quercus agrifolia</i>
+            <ul>
+               <li>A member of the black oaks subgenera</li>
+            </ul>
+         </div>
+      </div>
+
+      <div id="chaparral" class="categoryHeader">
+         <h2 style="text-align: center">Chaparral</h2>
+         <p>
+            Chaparral is another major plant community found in San Diego county. It is typically characterized by larger plants and increased demands for water. It is more likely to be found on shady mesic (north-facing) slopes. Some examples of plants
+            in this community include...
+         </p>
+      </div>
+      <div class="plantCategory">
+         <div class="plantCard">
+            <h3>Laurel Sumac</h3>
+            <img src="img/chaparral/laurelsumac1.jpg" alt="" />
+            <i>Malosma laurina</i>
+            <ul>
+               <li>Although it is in the same sumac family as poison sumac and poison oak, it is not poisonous and is safe to touch</li>
+               <li>Sometimes called the "taco plant" because of its leaf shape</li>
+            </ul>
+         </div>
+         <div class="plantCard">
+            <h3>Engelmann's Oak</h3>
+            <img src="img/chaparral/eldermannsoak1.jpg" alt="" />
+            <i>Quercus engelmannii</i>
+            <ul>
+               <li>A member of the white oaks subgenera</li>
+            </ul>
+         </div>
+         <div class="plantCard">
+            <h3>Chaparral Broom</h3>
+            <img src="img/chaparral/chaparralbroom2.jpg" alt="" />
+            <i>Baccharis serothoides</i>
+            <ul>
+               <li>Its leaf clusters are broom-shaped</li>
+            </ul>
+         </div>
+         <div class="plantCard">
+            <h3>Flat-top Buckwheat</h3>
+            <img src="img/chaparral/flattopbuckwheat1.jpg" alt="" />
+            <i>Eriogonum fasciculatum</i>
+            <ul>
+               <li>Good at attracting bees and butterflies</li>
+            </ul>
+         </div>
+         <div class="plantCard">
+            <h3>San Diego Sunflower</h3>
+            <img src="img/chaparral/sdsunflower1.jpg" alt="" />
+            <i>Bahiopsis laciniata</i>
+         </div>
+      </div>
+      <div class="categoryHeader" id="desert">
+         <h2 style="text-align: center">Desert Scrub</h2>
+         <p>
+            Within desert ecosystems, there are a number of different desert plant communities that have arisen to cope with different regional factors. Around dry lakebeds, one might find salt-tolerant plants, in locations with looser soil conditions,
+            one might find plants with larger root systems, and in locations with little shade, one will find lighter-colored plants. These adaptations are all to ensure long-term survival of the different plant species. Several of these plant species
+            include...
+         </p>
+      </div>
+
+      <div class="plantCategory">
+         <div class="plantCard">
+            <h3>Ocotillo</h3>
+            <img src="img/drylake/ocotillo1.jpg" alt="" />
+            <em>Fouquieria splendens </em>
+            <ul>
+               <li>Despite its spiny exterior, Ocotillo is not a cactus</li>
+            </ul>
+         </div>
+         <div class="plantCard">
+            <h3>Chuparosa</h3>
+            <img src="img/drylake/chuparosa1.jpg" alt="" />
+            <i>Justicia californica</i>
+
+            <ul>
+               <li>Its Spanish name origin refers to how it is pollinated by hummingbirds</li>
+            </ul>
+         </div>
+         <div class="plantCard">
+            <h3>Creosote Bush</h3>
+            <img src="img/drylake/creosote1.jpg" alt="" />
+            <i>Larrea tridentata</i>
+            <ul>
+               <li>Rings of creosote bushes can potentially live for thousands of years</li>
+               <li>Creosote has been used in Native American medicine</li>
+            </ul>
+         </div>
+         <div class="plantCard">
+            <h3>Brittlebush</h3>
+            <img src="img/drylake/brittlebush2.jpg" alt="" />
+            <i>Encelia farnosa</i>
+            <ul>
+               <li>A member of the sunflower family</li>
+            </ul>
+         </div>
+
+         <div class="plantCard">
+            <h3>Beavertail Cactus</h3>
+            <img src="img/drylake/beavertailcactus1.jpg" alt="" />
+            <i>Opuntia basilaris</i>
+         </div>
+
+         <div class="plantCard">
+            <h3>Desert Willow</h3>
+            <img src="img/drylake/desertwillow1.jpg" alt="" />
+            <i>Chilopsis linearis</i>
+         </div>
+
+         <div class="plantCard">
+            <h3>Desert Lavender</h3>
+            <img src="img/drylake/desertlavender1.jpg" alt="" />
+            <i>Hyptis emoryi</i>
+         </div>
+      </div>
+
+      <div class="resources">
+         <div>
+            <span style="text-align: center"><strong>Map (click to explore)</strong></span>
+            <a
+               href="https://www.google.com/maps/place/Mission+Trails+Regional+Park/@32.8268681,-117.0490719,14.17z/data=!4m8!1m2!2m1!1sMission+Trails+Regional+Park,+Father+Junipero+Serra+Trail,+San+Diego,+CA!3m4!1s0x80dbfd8bfcc2703d:0x234faaa4bf8c468f!8m2!3d32.817952!4d-117.05601"
+               ><img src="img/maps/map2.jpg" alt="Map image depicting Mission Trails Regional Park and Grossmont College"
+            /></a>
+         </div>
+         <div>
+            <p>Want to check out some of these plants for yourself? Both Grossmont College and Mission Trails Regional Park offer great plant gardens with labeled coastal sage scrub and chaparral plants! Check them out!</p>
+            <strong>Resources</strong>
+            <ul>
+               <li>
+                  <a href="https://mtrp.org" target="_blank" rel="noopener">Mission Trails Regional Park</a> <i
+                     >(<a
+                        href="https://www.google.com/maps/place/Mission+Trails+Regional+Park/@32.8190483,-117.0586014,17z/data=!4m8!1m2!2m1!1sMission+Trails+Regional+Park,+Father+Junipero+Serra+Trail,+San+Diego,+CA!3m4!1s0x80dbfd8bfcc2703d:0x234faaa4bf8c468f!8m2!3d32.817952!4d-117.05601"
+                        target="_blank"
+                        rel="noopener"
+                        >map</a
+                     >) One Father Junipero Serra Trail San Diego, CA 92119</i
+                  >
+               </li>
+               <li>
+                  <a href="https://grossmont.edu/default.aspx" target="_blank" rel="noopener">Grossmont College</a>'s Regional Plants Garden <i
+                     >(<a href="https://www.google.com/maps/place/Grossmont+College/@32.8166757,-117.007659,469m/data=!3m2!1e3!4b1!4m5!3m4!1s0x80d957ebaab851ef:0x7a79876543d865f1!8m2!3d32.8166735!4d-117.0065725" target="_blank" rel="noopener">map</a>) </i
+                  >
+                  <i>8800 Grossmont College Drive El Cajon, CA 92020 (located to the south of the science lab building)</i>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <footer>David Richards • <a href="http://davidrichards.me">davidrichards.me</a></footer>
+   </body>
+</html>
