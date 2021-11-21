@@ -94,14 +94,14 @@ function gradeQuestions() {
 
    for (i = 0; i < 10; i++) {
       if (typeof randomQuiz[choices[i].value] === "undefined") {
-         document.getElementById("score").innerHTML += "<li>Not answered</li>";
+         document.getElementById("score").innerHTML += "<li><b>Question " + (i + 1) + ":</b> " + "Not answered</li>" + "<br>";
          incorrect++;
       } else if (randomQuiz[options[i][1]][2] === randomQuiz[choices[i].value][2]) {
-         document.getElementById("score").innerHTML += "<li>" + randomQuiz[options[i][1]][1] + "</li>";
+         document.getElementById("score").innerHTML += "<li><b>Question " + (i + 1) + ":</b> " + randomQuiz[options[i][1]][1] + "</li>";
          document.getElementById("score").innerHTML += "Correct: " + randomQuiz[choices[i].value][2];
          correct++;
       } else {
-         document.getElementById("score").innerHTML += "<li>" + randomQuiz[options[i][1]][1] + "</li>";
+         document.getElementById("score").innerHTML += "<li><b>Question " + (i + 1) + ":</b> " + randomQuiz[options[i][1]][1] + "</li>";
          document.getElementById("score").innerHTML += "Incorrect! Correct answer is: " + randomQuiz[options[i][1]][2] + " |  You chose: " + randomQuiz[choices[i].value][2];
          incorrect++;
       }
