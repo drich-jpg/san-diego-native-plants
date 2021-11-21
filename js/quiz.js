@@ -86,6 +86,7 @@ function getOptions(i) {
 // Grade items
 var choices = [];
 function gradeQuestions() {
+   document.getElementById("quiz").style = "display: none;";
    document.getElementById("score").innerHTML = "Results:<br />";
    choices = document.getElementsByClassName("selection");
    var correct = 0;
@@ -112,7 +113,9 @@ function gradeQuestions() {
    document.getElementById("score").innerHTML += "<br />Score: " + totalPoints + "%";
 }
 
+// Initialize page, shuffle cards, place questions, and place buttons
 function initialize() {
+   document.getElementById("quiz").style = "";
    randomQuiz = shuffleCards(plantCards);
    document.getElementById("buttons").innerHTML = "<button onclick='gradeQuestions()'>Check Score</button>";
    document.getElementById("quiz").innerHTML = "";
